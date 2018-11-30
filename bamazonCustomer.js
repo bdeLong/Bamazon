@@ -70,7 +70,7 @@ const checkOut = () => {
               inquirer.prompt({
                 name: `rePick`,
                 type: `input`,
-                message: `You've chosen a quantity that is more than we have in stock, please choose a quantity that is equal too or less than ${itemsInStock}`,
+                message: `You've chosen a quantity that is more than we have in stock.\n Please choose a quantity that is equal too or less than ${itemsInStock}`,
               })
                 .then(function (res) {
                   purchaseQuantity = res.rePick;
